@@ -7089,18 +7089,55 @@ footer img {
           font-size: xx-large; } }
     .home-banner .block-banner .main-cnt figure a {
       margin-top: 1rem;
-      box-shadow: 0 2px 3px black;
+      box-shadow: 0 1px 0.2px black;
       color: white;
       padding: 0.5rem 1.5rem;
       background: #01B460;
-      transition: 0.3s all ease-in-out; }
+      transition: 0.5s all ease-in-out; }
       @media (min-width: 992px) {
         .home-banner .block-banner .main-cnt figure a {
           font-weight: bold;
-          font-size: x-large; } }
+          font-size: x-large;
+          box-shadow: -2px 5px 9px #000000db; } }
       .home-banner .block-banner .main-cnt figure a:hover {
         text-decoration: none;
-        background: #01cd6e;
-        color: #e6e6e6; }
+        background: white;
+        color: #01B460; }
+
+.home-title-1 h2 {
+  color: #01B460;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem; }
+  @media (min-width: 992px) {
+    .home-title-1 h2 {
+      margin-bottom: initial; } }
+
+.home-title-1 hr {
+  display: none; }
+  @media (min-width: 992px) {
+    .home-title-1 hr {
+      display: block;
+      margin-bottom: 2rem; } }
+
+.home-title-1 .flex {
+  display: flex;
+  justify-content: center; }
+  .home-title-1 .flex figure {
+    width: 50%; }
+    .home-title-1 .flex figure img {
+      max-width: 100%; }
+      @media (min-width: 992px) {
+        .home-title-1 .flex figure img {
+          width: 100%; } }
+    .home-title-1 .flex figure figcaption p {
+      width: 22rem;
+      word-wrap: break-word;
+      line-height: 1.3rem;
+      font-size: small;
+      opacity: 0.6; }
+    @media (min-width: 992px) {
+      .home-title-1 .flex figure {
+        width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

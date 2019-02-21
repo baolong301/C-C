@@ -43,16 +43,49 @@
 						font-size: xx-large
 				a
 					margin-top: 1rem
-					box-shadow: 0 2px 3px black
+					box-shadow: 0 1px 0.2px black
 					color: white
 					padding: 0.5rem 1.5rem
 					background: #01B460
-					transition: 0.3s all ease-in-out
+					transition: 0.5s all ease-in-out
 					+media-breakpoint-up(lg)
 						font-weight: bold
 						font-size: x-large
+						box-shadow: -2px 5px 9px #000000db
 					&:hover
 						text-decoration: none
-						background: lighten(#01B460,5%)
-						color: darken(white,10%)
-
+						background: white
+						color: #01B460
+// ***************************************************************
+// Phần home-title-1
+.home-title-1
+	h2
+		color: #01B460
+		font-weight: bold
+		text-align: center
+		margin-bottom: 1rem
+		+media-breakpoint-up(lg)
+			margin-bottom: initial
+	hr
+		display: none
+		+media-breakpoint-up(lg)
+			display: block
+			margin-bottom: 2rem
+	.flex
+		display: flex
+		justify-content: center
+		figure
+			width: 50%
+			img
+				max-width: 100%
+				+media-breakpoint-up(lg)
+					width: 100%
+			figcaption
+				p
+					width: 22rem
+					word-wrap: break-word
+					line-height: 1.3rem
+					font-size: small
+					opacity: 0.6
+			+media-breakpoint-up(lg)
+				width: 100%
