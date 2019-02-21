@@ -7030,20 +7030,6 @@ html, body {
   .container {
     width: auto; } }
 
-header .navbar {
-  padding-right: 0;
-  padding-left: 0; }
-
-header .navbar-brand img {
-  max-height: 2rem; }
-
-@media (min-width: 768px) {
-  header .navbar-brand img {
-    max-height: 3rem; } }
-
-footer img {
-  max-width: 200px; }
-
 .home-banner {
   color: white;
   margin-bottom: 1rem; }
