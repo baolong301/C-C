@@ -7082,9 +7082,11 @@ footer img {
         .home-banner .block-banner .main-cnt figure img {
           width: 30%; } }
     .home-banner .block-banner .main-cnt figure p {
-      font-weight: 300;
-      font-weight: bold;
-      font-size: xx-large; }
+      font-weight: 300; }
+      @media (min-width: 992px) {
+        .home-banner .block-banner .main-cnt figure p {
+          font-weight: bold;
+          font-size: xx-large; } }
     .home-banner .block-banner .main-cnt figure a {
       margin-top: 1rem;
       box-shadow: 0 2px 3px black;
