@@ -1,0 +1,41 @@
+header
+	+media-breakpoint-up(md)
+		position: fixed
+		width: 100%
+		z-index: 2
+		.bg
+			background: initial
+			position: relative
+			.container
+				ul
+					li
+						+media-breakpoint-up(md)
+							margin: 0 .5rem
+							i
+								color: white
+							a
+								position: relative
+								color: white!important
+								transition: 0.3s all ease-in-out
+								// &:before
+								// 	display: block
+								// 	content: ''
+								// 	width: 100%
+								// 	height: 1.5px
+								// 	position: absolute
+								// 	top: 90%
+								// 	left: 50%
+								// 	transform: translateX(-50%)
+								// 	opacity: 0
+								// 	transition: 0.3s all ease-in-out
+								// 	background: white
+								&:hover
+									transform: scale(1.2)
+									// &:before
+									// 	opacity: 1
+				hr
+					opacity: 0.5
+					background: white
+					margin-top: 0px
+					border: 0.2px solid white
+

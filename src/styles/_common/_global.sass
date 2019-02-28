@@ -4,3 +4,23 @@ html, body
 	font-size: 14px
 	height: 100%
 	width: 100%
+	+media-breakpoint-up(lg)
+		font-size: 18px
+	.pc-ab
+		+media-breakpoint-up(md)
+			position: absolute
+	.left-50
+		+media-breakpoint-up(md)
+			left: 50%
+			transform: translateX(-50%)
+	.right-100
+		+media-breakpoint-up(md)
+			right: 0
+	.pc-y-25
+		+media-breakpoint-up(md)
+			transform: translateY(25%)
+			&:hover
+				transform: translateY(25%) scale(1)!important
+	// .initial-hover
+	// 	transform: scale(1) 
+ 
