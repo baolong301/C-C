@@ -2,3 +2,22 @@
 =flex()
 	display: flex
 	justify-content: center
+
+=placeholder-color($color) 
+	&::-webkit-input-placeholder  /* WebKit browsers */
+		color: $color
+		opacity: 0.7
+
+	&:-moz-placeholder  /* Mozilla Firefox 4 to 18 */
+		color: $color
+		opacity: 0.7
+
+	&::-moz-placeholder  /* Mozilla Firefox 19+ */
+		color: $color
+		opacity: 0.7
+
+	&:-ms-input-placeholder  /* Internet Explorer 10+ */
+		color: $color
+		opacity: 0.7
+=initial-outline()
+	outline: initial!important
