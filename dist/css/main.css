@@ -9380,31 +9380,30 @@ html, body {
 
 header {
   position: relative;
-  transition: 0.3s all ease-in-out; }
+  transition: 0.3s all ease-in-out;
+  position: fixed;
+  width: 100%;
+  z-index: 2; }
   @media (min-width: 768px) {
-    header {
-      position: fixed;
-      width: 100%;
-      z-index: 2; }
-      header .bg {
-        background: initial;
-        position: relative; } }
-    @media (min-width: 768px) and (min-width: 768px) {
-      header .bg .container ul li {
-        margin: 0 .5rem; }
-        header .bg .container ul li .white {
-          color: white !important; }
-        header .bg .container ul li a {
-          position: relative;
-          transition: 0.3s all ease-in-out; }
-          header .bg .container ul li a:hover {
-            transform: scale(1.2); } }
+    header .bg {
+      background: initial;
+      position: relative; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    header .bg .container ul li {
+      margin: 0 .5rem; }
+      header .bg .container ul li .white {
+        color: white !important; }
+      header .bg .container ul li a {
+        position: relative;
+        transition: 0.3s all ease-in-out; }
+        header .bg .container ul li a:hover {
+          transform: scale(1.2); } }
   @media (min-width: 768px) {
-        header .bg .container hr {
-          opacity: 0.5;
-          background: white;
-          margin-top: 0px;
-          border: 0.2px solid white; } }
+      header .bg .container hr {
+        opacity: 0.5;
+        background: white;
+        margin-top: 0px;
+        border: 0.2px solid white; } }
 
 footer {
   color: white;
@@ -9476,10 +9475,13 @@ footer {
           color: white;
           font-size: larger; }
 
-.home-banner {
+main h2 {
+  color: #01B460; }
+
+main .home-banner {
   color: white;
   margin-bottom: 1rem; }
-  .home-banner .block-banner {
+  main .home-banner .block-banner {
     width: 100%;
     position: relative;
     background: url("../img/home-banner.jpg");
@@ -9492,9 +9494,9 @@ footer {
     justify-content: center;
     align-items: center;
     box-shadow: 0 0.5px 10px 1px black; }
-    .home-banner .block-banner img {
+    main .home-banner .block-banner img {
       width: 100%; }
-    .home-banner .block-banner:before {
+    main .home-banner .block-banner:before {
       display: block;
       content: '';
       width: 100%;
@@ -9503,23 +9505,23 @@ footer {
       background: black;
       opacity: 0.4; }
     @media (min-width: 992px) {
-      .home-banner .block-banner {
+      main .home-banner .block-banner {
         height: 39rem; } }
     @media (min-width: 992px) {
-      .home-banner .block-banner .main-cnt {
+      main .home-banner .block-banner .main-cnt {
         font-size: 14pt; } }
-    .home-banner .block-banner .main-cnt figure img {
+    main .home-banner .block-banner .main-cnt figure img {
       width: 70%; }
       @media (min-width: 992px) {
-        .home-banner .block-banner .main-cnt figure img {
+        main .home-banner .block-banner .main-cnt figure img {
           width: 30%; } }
-    .home-banner .block-banner .main-cnt figure p {
+    main .home-banner .block-banner .main-cnt figure p {
       font-weight: 300; }
       @media (min-width: 992px) {
-        .home-banner .block-banner .main-cnt figure p {
+        main .home-banner .block-banner .main-cnt figure p {
           font-weight: bold;
           font-size: xx-large; } }
-    .home-banner .block-banner .main-cnt figure a {
+    main .home-banner .block-banner .main-cnt figure a {
       margin-top: 1rem;
       box-shadow: 0 1px 0.2px black;
       color: white;
@@ -9527,49 +9529,187 @@ footer {
       background: #01B460;
       transition: 0.5s all ease-in-out; }
       @media (min-width: 992px) {
-        .home-banner .block-banner .main-cnt figure a {
+        main .home-banner .block-banner .main-cnt figure a {
           font-weight: bold;
           font-size: x-large;
           box-shadow: -2px 5px 9px #000000db; } }
-      .home-banner .block-banner .main-cnt figure a:hover {
+      main .home-banner .block-banner .main-cnt figure a:hover {
         text-decoration: none;
         background: white;
         color: #01B460; }
 
-.home-title-1 h2 {
-  color: #01B460;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 1rem; }
-  @media (min-width: 992px) {
-    .home-title-1 h2 {
-      margin-bottom: initial; } }
-
-.home-title-1 hr {
-  display: none; }
-  @media (min-width: 992px) {
-    .home-title-1 hr {
-      display: block;
-      margin-bottom: 2rem; } }
-
-.home-title-1 .flex {
-  display: flex;
-  justify-content: center; }
-  .home-title-1 .flex figure {
-    width: 50%; }
-    .home-title-1 .flex figure img {
-      max-width: 100%; }
-      @media (min-width: 992px) {
-        .home-title-1 .flex figure img {
-          width: 100%; } }
-    .home-title-1 .flex figure figcaption p {
-      width: 22rem;
-      word-wrap: break-word;
-      line-height: 1.3rem;
-      font-size: small;
-      opacity: 0.6; }
-    @media (min-width: 992px) {
-      .home-title-1 .flex figure {
+main .how-it-work {
+  padding: 2rem 0; }
+  main .how-it-work img {
+    width: 75%; }
+    @media (min-width: 768px) {
+      main .how-it-work img {
         width: 100%; } }
+  main .how-it-work .text-title {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      main .how-it-work .text-title {
+        text-align: left;
+        justify-content: initial; } }
+    main .how-it-work .text-title p {
+      opacity: 0.6; }
+
+main .best-combo {
+  padding: 2rem 0; }
+  main .best-combo h2 {
+    margin-bottom: 1rem; }
+  @media (min-width: 768px) {
+    main .best-combo .container {
+      position: relative; }
+      main .best-combo .container:before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #01B460;
+        top: 1.2rem;
+        z-index: -2; }
+      main .best-combo .container:after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 22%;
+        height: 2rem;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        z-index: -1; } }
+  main .best-combo a {
+    margin-top: 1rem;
+    color: black; }
+    main .best-combo a:hover, main .best-combo a:active {
+      text-decoration: none; }
+    main .best-combo a figure figcaption p {
+      opacity: 0.6; }
+
+main .our-blog {
+  padding: 2rem 0; }
+  @media (min-width: 768px) {
+    main .our-blog .container {
+      position: relative; }
+      main .our-blog .container:before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #01B460;
+        top: 1.2rem;
+        z-index: -2; }
+      main .our-blog .container:after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 22%;
+        height: 2rem;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        z-index: -1; } }
+  main .our-blog a {
+    color: white; }
+    main .our-blog a:hover, main .our-blog a:active {
+      text-decoration: none; }
+    main .our-blog a figure {
+      box-shadow: -1px 2px 5px #000000db;
+      padding-bottom: 3rem;
+      background: #389545; }
+      main .our-blog a figure .block-img {
+        width: 100%;
+        height: 20rem;
+        overflow: hidden; }
+      main .our-blog a figure figcaption {
+        padding: 0.5rem; }
+        main .our-blog a figure figcaption p {
+          opacity: 0.8; }
+  main .our-blog a.blog-button {
+    padding: 0.5rem 2rem;
+    background: #389545;
+    margin-top: 1rem;
+    box-shadow: 0px 2px 5px #000000db;
+    transition: 0.3s all ease-in-out; }
+    main .our-blog a.blog-button:hover {
+      background: #46ba56; }
+
+main .feedback {
+  padding: 2rem 0; }
+  @media (min-width: 768px) {
+    main .feedback .container {
+      position: relative; }
+      main .feedback .container:before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #01B460;
+        top: 1.2rem;
+        z-index: -2; }
+      main .feedback .container:after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 40%;
+        height: 2rem;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        z-index: -1; } }
+  main .feedback figure figcaption h3 {
+    color: #01B460; }
+  main .feedback figure figcaption small {
+    opacity: 0.6; }
+  main .feedback figure figcaption .block-text {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    main .feedback figure figcaption .block-text p {
+      width: 80%;
+      word-break: break-word;
+      font-weight: bold;
+      opacity: 0.8; }
+      @media (min-width: 768px) {
+        main .feedback figure figcaption .block-text p {
+          width: 65%; } }
+  main .feedback .owl-carousel .owl-item img {
+    display: initial;
+    width: initial; }
+
+main .partners {
+  padding: 2rem 0; }
+  @media (min-width: 768px) {
+    main .partners .container {
+      position: relative; }
+      main .partners .container:before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #01B460;
+        top: 1.2rem;
+        z-index: -2; }
+      main .partners .container:after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 25%;
+        height: 2rem;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        z-index: -1; } }
 
 /*# sourceMappingURL=main.css.map */

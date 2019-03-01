@@ -1,91 +1,232 @@
-//  Phần home banner
-
-.home-banner
-	color: white
-	margin-bottom: 1rem
-	.block-banner
-		width: 100%
-		position: relative
-		background: url('../img/home-banner.jpg')
-		background-size: cover
-		background-position: center center
-		background-repeat: no-repeat
-		height: 18rem
-		overflow: hidden
-		display: flex
-		justify-content: center
-		align-items: center
-		box-shadow: 0 0.5px 10px 1px black
-		img
-			width: 100%
-		&:before
-			display: block
-			content: ''
-			width: 100%
-			height: 100%
-			position: absolute
-			background: black
-			opacity: 0.4
-		+media-breakpoint-up(lg)
-			height: 39rem
-		.main-cnt
-			+media-breakpoint-up(lg)
-				font-size: 14pt
-			figure
-				img
-					width: 70%
-					+media-breakpoint-up(lg)
-						width: 30%
-				p
-					font-weight: 300
-					+media-breakpoint-up(lg)
-						font-weight: bold
-						font-size: xx-large
-				a
-					margin-top: 1rem
-					box-shadow: 0 1px 0.2px black
-					color: white
-					padding: 0.5rem 1.5rem
-					background: #01B460
-					transition: 0.5s all ease-in-out
-					+media-breakpoint-up(lg)
-						font-weight: bold
-						font-size: x-large
-						box-shadow: -2px 5px 9px #000000db
-					&:hover
-						text-decoration: none
-						background: white
-						color: #01B460
-// ***************************************************************
-// Phần home-title-1
-.home-title-1
+main
 	h2
 		color: #01B460
-		font-weight: bold
-		text-align: center
+	//  Phần home banner
+	.home-banner
+		color: white
 		margin-bottom: 1rem
-		+media-breakpoint-up(lg)
-			margin-bottom: initial
-	hr
-		display: none
-		+media-breakpoint-up(lg)
-			display: block
-			margin-bottom: 2rem
-	.flex
-		display: flex
-		justify-content: center
-		figure
-			width: 50%
+		.block-banner
+			width: 100%
+			position: relative
+			background: url('../img/home-banner.jpg')
+			background-size: cover
+			background-position: center center
+			background-repeat: no-repeat
+			height: 18rem
+			overflow: hidden
+			display: flex
+			justify-content: center
+			align-items: center
+			box-shadow: 0 0.5px 10px 1px black
 			img
-				max-width: 100%
-				+media-breakpoint-up(lg)
-					width: 100%
-			figcaption
-				p
-					width: 22rem
-					word-wrap: break-word
-					line-height: 1.3rem
-					font-size: small
-					opacity: 0.6
-			+media-breakpoint-up(lg)
 				width: 100%
+			&:before
+				display: block
+				content: ''
+				width: 100%
+				height: 100%
+				position: absolute
+				background: black
+				opacity: 0.4
+			+media-breakpoint-up(lg)
+				height: 39rem
+			.main-cnt
+				+media-breakpoint-up(lg)
+					font-size: 14pt
+				figure
+					img
+						width: 70%
+						+media-breakpoint-up(lg)
+							width: 30%
+					p
+						font-weight: 300
+						+media-breakpoint-up(lg)
+							font-weight: bold
+							font-size: xx-large
+					a
+						margin-top: 1rem
+						box-shadow: 0 1px 0.2px black
+						color: white
+						padding: 0.5rem 1.5rem
+						background: #01B460
+						transition: 0.5s all ease-in-out
+						+media-breakpoint-up(lg)
+							font-weight: bold
+							font-size: x-large
+							box-shadow: -2px 5px 9px #000000db
+						&:hover
+							text-decoration: none
+							background: white
+							color: #01B460
+	// ***************************************************************
+	// Phần how it work
+	.how-it-work
+		padding: 2rem 0
+		img
+			width: 75%
+			+media-breakpoint-up(md)
+				width: 100%
+		.text-title
+			display: flex
+			align-items: center
+			justify-content: center
+			+media-breakpoint-up(md)
+				text-align: left
+				justify-content: initial
+			p
+				opacity: 0.6
+	.best-combo
+		padding: 2rem 0
+		h2
+			margin-bottom: 1rem
+		+media-breakpoint-up(md)
+			.container
+				position: relative
+				&:before
+					display: block
+					content: ''
+					position: absolute
+					width: 100%
+					height: 2px
+					background: #01B460
+					top: 1.2rem
+					z-index: -2
+				&:after
+					display: block
+					content: ''
+					position: absolute
+					width: 22%
+					height: 2rem
+					top: 0
+					left: 50%
+					transform: translateX(-50%)
+					background: white
+					z-index: -1
+		a
+			margin-top: 1rem
+			color: black
+			&:hover,&:active
+				text-decoration: none
+			figure
+				figcaption
+					p
+						opacity: 0.6
+	.our-blog
+		padding: 2rem 0
+		+media-breakpoint-up(md)
+			.container
+				position: relative
+				&:before
+					display: block
+					content: ''
+					position: absolute
+					width: 100%
+					height: 2px
+					background: #01B460
+					top: 1.2rem
+					z-index: -2
+				&:after
+					display: block
+					content: ''
+					position: absolute
+					width: 22%
+					height: 2rem
+					top: 0
+					left: 50%
+					transform: translateX(-50%)
+					background: white
+					z-index: -1
+		a
+			color: white
+			&:hover,&:active
+				text-decoration: none
+			figure
+				box-shadow: -1px 2px 5px #000000db
+				padding-bottom: 3rem
+				background: #389545
+				.block-img
+					width: 100%
+					height: 20rem
+					overflow: hidden
+				figcaption
+					padding: 0.5rem
+					p
+						opacity: 0.8
+		a.blog-button
+			padding: 0.5rem 2rem
+			background: #389545
+			margin-top: 1rem
+			box-shadow: 0px 2px 5px #000000db
+			transition: 0.3s all ease-in-out
+			&:hover
+				background: lighten(#389545,10%)
+	.feedback
+		padding: 2rem 0
+		+media-breakpoint-up(md)
+			.container
+				position: relative
+				&:before
+					display: block
+					content: ''
+					position: absolute
+					width: 100%
+					height: 2px
+					background: #01B460
+					top: 1.2rem
+					z-index: -2
+				&:after
+					display: block
+					content: ''
+					position: absolute
+					width: 40%
+					height: 2rem
+					top: 0
+					left: 50%
+					transform: translateX(-50%)
+					background: white
+					z-index: -1
+		figure
+			figcaption
+				h3
+					color: #01B460
+				small
+					opacity: 0.6
+				.block-text
+					width: 100%
+					display: flex
+					justify-content: center
+					p
+						width: 80%
+						word-break: break-word
+						font-weight: bold
+						opacity: 0.8
+						+media-breakpoint-up(md)
+							width: 65%
+		.owl-carousel .owl-item img
+			display: initial
+			width: initial
+	.partners
+		padding: 2rem 0
+		+media-breakpoint-up(md)
+			.container
+				position: relative
+				&:before
+					display: block
+					content: ''
+					position: absolute
+					width: 100%
+					height: 2px
+					background: #01B460
+					top: 1.2rem
+					z-index: -2
+				&:after
+					display: block
+					content: ''
+					position: absolute
+					width: 25%
+					height: 2rem
+					top: 0
+					left: 50%
+					transform: translateX(-50%)
+					background: white
+					z-index: -1
