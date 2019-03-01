@@ -4,6 +4,7 @@ footer
 	background: #01B460
 	box-shadow: 0 0.5px 10px 1px black
 	.footer-part-1
+		padding-bottom: 2rem
 		.text
 			background: darken(#01B460,8%)
 			border: initial
@@ -29,3 +30,29 @@ footer
 				border-radius: 10px
 				box-shadow: -1px 2px 5px 0px #0000006b
 	.footer-part-2
+		padding: 2rem 0
+		padding-bottom: 0.2rem
+		background: darken(#01B460,8%)
+		box-shadow: 0 0.5px 10px 1px black
+		hr
+			border-top-color: white!important
+		figure
+			figcaption
+				+media-breakpoint-up(md)
+					display: flex
+					justify-content: center
+					p
+						line-height: 1.4rem
+						word-break: break-word
+						width: 50%
+		ul
+			padding: 0
+			display: inline-flex
+			// transform: translateX(-20%)
+			li
+				margin: 0 0.5rem
+				list-style: none
+				a
+					padding: 0 0.5rem
+					color: white
+					font-size: larger

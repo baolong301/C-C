@@ -32,9 +32,21 @@ $(function () {
     }
 });
 // Main
+
 $(document).ready(function () {
     // Show scrollTop
     console.log($(window).scrollTop());
+    $(window).scroll(function () {
+        var scrolltop = $(window).scrollTop();
+        console.log(scrolltop);
+        if (scrolltop > 10) {
+            $('header ul li a').removeClass('white');
+            $('header').css({ 'background': 'white', 'color': 'black!important', 'box-shadow': '0 0.5px 15px 1px black' });
+        } else {
+            $('header ul li a').addClass('white');
+            $('header').css({ 'background': 'initial', 'color': 'initial', 'box-shadow': 'initial' });
+        }
+    });
     // Phần Slider
     $('.home-slider .owl-carousel').owlCarousel({
         items: 1,

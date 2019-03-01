@@ -9378,75 +9378,103 @@ html, body {
   .container {
     width: auto; } }
 
-@media (min-width: 768px) {
-  header {
-    position: fixed;
-    width: 100%;
-    z-index: 2; }
-    header .bg {
-      background: initial;
-      position: relative; } }
+header {
+  position: relative;
+  transition: 0.3s all ease-in-out; }
+  @media (min-width: 768px) {
+    header {
+      position: fixed;
+      width: 100%;
+      z-index: 2; }
+      header .bg {
+        background: initial;
+        position: relative; } }
     @media (min-width: 768px) and (min-width: 768px) {
       header .bg .container ul li {
         margin: 0 .5rem; }
-        header .bg .container ul li i {
-          color: white; }
+        header .bg .container ul li .white {
+          color: white !important; }
         header .bg .container ul li a {
           position: relative;
-          color: white !important;
           transition: 0.3s all ease-in-out; }
           header .bg .container ul li a:hover {
             transform: scale(1.2); } }
-
-@media (min-width: 768px) {
-      header .bg .container hr {
-        opacity: 0.5;
-        background: white;
-        margin-top: 0px;
-        border: 0.2px solid white; } }
+  @media (min-width: 768px) {
+        header .bg .container hr {
+          opacity: 0.5;
+          background: white;
+          margin-top: 0px;
+          border: 0.2px solid white; } }
 
 footer {
   color: white;
   padding-top: 2rem;
   background: #01B460;
   box-shadow: 0 0.5px 10px 1px black; }
-  footer .footer-part-1 .text {
+  footer .footer-part-1 {
+    padding-bottom: 2rem; }
+    footer .footer-part-1 .text {
+      background: #018b4a;
+      border: initial;
+      color: white;
+      width: 100%;
+      border-radius: 3px;
+      padding: 0.2rem 0.5rem;
+      margin: 1rem 0;
+      box-shadow: inset 0 0 1px #0000006b; }
+      footer .footer-part-1 .text::-webkit-input-placeholder {
+        color: white;
+        opacity: 0.7; }
+      footer .footer-part-1 .text:-moz-placeholder {
+        color: white;
+        opacity: 0.7; }
+      footer .footer-part-1 .text::-moz-placeholder {
+        color: white;
+        opacity: 0.7; }
+      footer .footer-part-1 .text:-ms-input-placeholder {
+        color: white;
+        opacity: 0.7; }
+      @media (min-width: 768px) {
+        footer .footer-part-1 .text {
+          border-radius: 10px; } }
+      footer .footer-part-1 .text:focus {
+        outline: initial !important; }
+    footer .footer-part-1 .submit-button {
+      background: yellow;
+      border: initial;
+      padding: 0.5rem 2.5rem;
+      font-weight: bold;
+      box-shadow: 0px 2px 3px 0px #0000006b;
+      border-radius: 3px; }
+      @media (min-width: 768px) {
+        footer .footer-part-1 .submit-button {
+          border-radius: 10px;
+          box-shadow: -1px 2px 5px 0px #0000006b; } }
+  footer .footer-part-2 {
+    padding: 2rem 0;
+    padding-bottom: 0.2rem;
     background: #018b4a;
-    border: initial;
-    color: white;
-    width: 100%;
-    border-radius: 3px;
-    padding: 0.2rem 0.5rem;
-    margin: 1rem 0;
-    box-shadow: inset 0 0 1px #0000006b; }
-    footer .footer-part-1 .text::-webkit-input-placeholder {
-      color: white;
-      opacity: 0.7; }
-    footer .footer-part-1 .text:-moz-placeholder {
-      color: white;
-      opacity: 0.7; }
-    footer .footer-part-1 .text::-moz-placeholder {
-      color: white;
-      opacity: 0.7; }
-    footer .footer-part-1 .text:-ms-input-placeholder {
-      color: white;
-      opacity: 0.7; }
+    box-shadow: 0 0.5px 10px 1px black; }
+    footer .footer-part-2 hr {
+      border-top-color: white !important; }
     @media (min-width: 768px) {
-      footer .footer-part-1 .text {
-        border-radius: 10px; } }
-    footer .footer-part-1 .text:focus {
-      outline: initial !important; }
-  footer .footer-part-1 .submit-button {
-    background: yellow;
-    border: initial;
-    padding: 0.5rem 2.5rem;
-    font-weight: bold;
-    box-shadow: 0px 2px 3px 0px #0000006b;
-    border-radius: 3px; }
-    @media (min-width: 768px) {
-      footer .footer-part-1 .submit-button {
-        border-radius: 10px;
-        box-shadow: -1px 2px 5px 0px #0000006b; } }
+      footer .footer-part-2 figure figcaption {
+        display: flex;
+        justify-content: center; }
+        footer .footer-part-2 figure figcaption p {
+          line-height: 1.4rem;
+          word-break: break-word;
+          width: 50%; } }
+    footer .footer-part-2 ul {
+      padding: 0;
+      display: inline-flex; }
+      footer .footer-part-2 ul li {
+        margin: 0 0.5rem;
+        list-style: none; }
+        footer .footer-part-2 ul li a {
+          padding: 0 0.5rem;
+          color: white;
+          font-size: larger; }
 
 .home-banner {
   color: white;

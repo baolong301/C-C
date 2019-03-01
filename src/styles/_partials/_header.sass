@@ -1,4 +1,6 @@
 header
+	position: relative
+	transition: 0.3s all ease-in-out
 	+media-breakpoint-up(md)
 		position: fixed
 		width: 100%
@@ -11,11 +13,10 @@ header
 					li
 						+media-breakpoint-up(md)
 							margin: 0 .5rem
-							i
-								color: white
+							.white
+								color: white!important
 							a
 								position: relative
-								color: white!important
 								transition: 0.3s all ease-in-out
 								// &:before
 								// 	display: block
